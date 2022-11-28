@@ -1,4 +1,4 @@
-def beca_academica(estudiantes):
+def beca_academica():
     for i in estudiantes:
         if  95 <= i['promedio']<= 100:
             cumple= True
@@ -14,7 +14,7 @@ def beca_academica(estudiantes):
             i['beca']= True
     for i in estudiantes:
         if i['beca']:
-            print(f"beca academica a {i['nombre']} {i['beca']} ")
+            print(f"beca academica a {i['nombre']} {i['beca']} {i['tipo de beca']} ")
 
 def beca_socioeconomica():
     pass
@@ -35,7 +35,7 @@ estudiantes= [
 
 
 def run():
-    beca_academica(estudiantes)
+    beca_academica()
     #!hacer el 2do proceso xd
 
     
