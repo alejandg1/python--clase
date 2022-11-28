@@ -16,6 +16,9 @@ def beca_academica(estudiantes):
         if i['beca']:
             print(f"beca academica a {i['nombre']} {i['beca']} ")
 
+def beca_socioeconomica():
+    pass
+
 
 def run():
     estudiantes= [
@@ -31,6 +34,8 @@ def run():
         {'nombre': 'Adrian', 'sexo': 'M', 'carrera': 'med', 'estado S.E.': 'alto', 'promedio': 96, 'asistencia': 90, 'beca': False, 'deuda': 0},
     ]
     beca_academica(estudiantes)
+    
+
     
 
 
