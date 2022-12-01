@@ -1,23 +1,23 @@
 estudiantes = [
-    {'nombre': 'Alejandro', 'sexo': 'M', 'carrera': 'soft', 'estado S.E.': 'bajo',
+    {'nombre': 'Alejandro', 'sexo': 'M', 'carrera': 'soft', 'estado.': 'bajo',
         'promedio': 80, 'asistencia': 100, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'ED', 'sexo': 'F', 'carrera': 'bio', 'estado S.E.': 'medio alto',
+    {'nombre': 'ED', 'sexo': 'F', 'carrera': 'bio', 'estado.': 'medio alto',
      'promedio': 99, 'asistencia': 97, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'alguien', 'sexo': 'M', 'carrera': 'soft', 'estado S.E.': 'medio bajo',
+    {'nombre': 'alguien', 'sexo': 'M', 'carrera': 'soft', 'estado.': 'medio bajo',
      'promedio': 80, 'asistencia': 90, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'Carlos', 'sexo': 'F', 'carrera': 'med', 'estado S.E.': 'medio bajo',
+    {'nombre': 'Carlos', 'sexo': 'F', 'carrera': 'med', 'estado.': 'medio bajo',
      'promedio': 85, 'asistencia': 90, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'Udyr', 'sexo': 'M', 'carrera': 'soft', 'estado S.E.': 'medio',
+    {'nombre': 'Udyr', 'sexo': 'M', 'carrera': 'soft', 'estado.': 'medio',
      'promedio': 78, 'asistencia': 90, 'beca': False, 'deuda': 4, 'tipo': ""},
-    {'nombre': 'Martha', 'sexo': 'F', 'carrera': 'soft', 'estado S.E.': 'medio',
+    {'nombre': 'Martha', 'sexo': 'F', 'carrera': 'soft', 'estado.': 'medio',
      'promedio': 100, 'asistencia': 100, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'Camille', 'sexo': 'F', 'carrera': 'soft', 'estado S.E.': 'bajo',
+    {'nombre': 'Camille', 'sexo': 'F', 'carrera': 'soft', 'estado.': 'bajo',
      'promedio': 80, 'asistencia': 90, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'Andres', 'sexo': 'M', 'carrera': 'med', 'estado S.E.': 'alto',
+    {'nombre': 'Andres', 'sexo': 'M', 'carrera': 'med', 'estado.': 'alto',
      'promedio': 70, 'asistencia': 60, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'Alison', 'sexo': 'f', 'carrera': 'bio', 'estado S.E.': 'medio',
+    {'nombre': 'Alison', 'sexo': 'f', 'carrera': 'bio', 'estado.': 'medio',
      'promedio': 98, 'asistencia': 80, 'beca': False, 'deuda': 0, 'tipo': ""},
-    {'nombre': 'Adrian', 'sexo': 'M', 'carrera': 'med', 'estado S.E.': 'alto',
+    {'nombre': 'Adrian', 'sexo': 'M', 'carrera': 'med', 'estado.': 'alto',
      'promedio': 96, 'asistencia': 90, 'beca': False, 'deuda': 0, 'tipo': ""},
 ]
 
@@ -56,7 +56,7 @@ def beca_socioeconomica():
             sin_beca = True
         else:
             sin_beca = False
-        if i['estado S.E.'] == "bajo" or i['estado S.E.'] == "medio bajo":
+        if i['estado.'] == "bajo" or i['estado.'] == "medio bajo":
             socioe = True
         else:
             socioe = False
