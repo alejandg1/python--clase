@@ -15,10 +15,6 @@ def area():
             largo = int(input("valor del largo de su rectangulo "))
             ancho = int(input("escriba el ancho del reactangulo "))
             a = largo*ancho
-
     print(f'el area de su poligono es: {a}')
-
 area()
-            
-
-
+        
