@@ -1,0 +1,21 @@
+[
+    {
+        "nombre": "Alejandro",
+        "carrera":"soft",
+        "nivel":"2"
+    },
+    {
+        "nombre":"Ana",
+        "carrera":"bio",
+        "nivel":"3"
+
+    },
+    {
+        "nombre":"Anibal",
+        "carrera":"comun",
+        "nivel":"4"
+    }
+
+
+
+]
