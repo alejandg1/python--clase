@@ -73,10 +73,17 @@ def beca_socioeconomica():
                 print(
                     f"beca otorgada a {i['nombre']}: {i['beca']}, tipo: {i['tipo']}  ")
 
+def nobecados():
+    print("-------------------------------------------------------estudiantes no becados------------------------------------------------")
+    for i in estudiantes:
+        if not(i['beca']):
+            print(f"a el estudiante: {i['nombre']} no se le ha otorgado ninguna beca")
+
 
 def run():
     beca_academica()
     beca_socioeconomica()
+    nobecados()
 
 
 if __name__ == "__main__":
