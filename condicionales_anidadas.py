@@ -41,7 +41,7 @@ def beca_academica():
                 cumpled = False
             if (cumplep & cumplea & cumpled):
                 i['beca'] = True
-                i['tipo'] = "a"
+                i['tipo'] = "A"
                 print(
                     f"beca otorgada a {i['nombre']}: {i['beca']}, tipo: {i['tipo']}  ")
 
@@ -69,7 +69,7 @@ def beca_socioeconomica():
                 cumpled = False
             if (cumplep & cumplea & cumpled & socioe):
                 i['beca'] = True
-                i['tipo'] = "s.e."
+                i['tipo'] = "S"
                 print(
                     f"beca otorgada a {i['nombre']}: {i['beca']}, tipo: {i['tipo']}  ")
 
