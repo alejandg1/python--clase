@@ -21,6 +21,21 @@ estudiantes = [
      'promedio': 96, 'asistencia': 90, 'beca': False, 'deuda': 0, 'tipo': ""},
 ]
 
+# estudiantes = [
+#         {'nombre': 'Kerly','carrera': 'Soft', 'sexo': 'M', 'estado': 'Medio', 'promedio': 80, 'asistencia': 100, 'beca': False, 'deuda':23.50, 'tipo':''},
+#         {'nombre': 'Andres','carrera': 'Soft', 'sexo': 'H', 'estado': 'Medio alto', 'promedio': 92, 'asistencia': 95, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Fernando','carrera': 'Soft', 'sexo': 'H', 'estado': 'Medio bajo', 'promedio': 98, 'asistencia': 80, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Karla','carrera': 'Bio', 'sexo': 'M', 'estado': 'Bajo', 'promedio': 99, 'asistencia': 98, 'beca': False,'deuda':0,'tipo':''},
+#         {'nombre': 'Manuel','carrera': 'Bio', 'sexo': 'H', 'estado': 'Alto', 'promedio': 90, 'asistencia': 99, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Anna','carrera': 'Bio', 'sexo': 'M', 'estado': 'Bajo', 'promedio': 85, 'asistencia': 93, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Brianna','carrera': 'Ali', 'sexo': 'M', 'estado': 'Bajo', 'promedio': 88, 'asistencia': 92, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Ivan','carrera': 'Ali', 'sexo': 'H', 'estado': 'Medio bajo', 'promedio': 92, 'asistencia': 90, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Tom','carrera': 'Ind', 'sexo': 'H', 'estado': 'Medio alto', 'promedio': 93, 'asistencia': 85, 'beca': False,'deuda':0, 'tipo':''},
+#         {'nombre': 'Omar','carrera': 'Ind', 'sexo': 'H', 'estado': 'Alto', 'promedio': 95, 'asistencia': 89, 'beca': False,'deuda':0, 'tipo':''},
+#         ]
+
+
+
 
 def beca_academica():
     print("---------------------------------------------------------becas academicas------------------------------------------------------")
