@@ -13,4 +13,14 @@ MORSE = {' ': ' ', 'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F
 
 def morse():
     mensaje = input("escriba un mensaje en morse o lenguaje natural..  ")
-    mensaje = mensaje.upper
+    mensaje = mensaje.upper()
+    print(f"{mensaje}")
+    if mensaje.__contains__(".") or mensaje.__contains__("-"):
+        for i in mensaje:
+            pass
+    elif mensaje.__contains__("[a-zA-Z0-9]"):
+        pass
+
+
+if __name__== "__main__":
+    morse()
