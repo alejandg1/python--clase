@@ -1,6 +1,4 @@
 import json
-
-
 def publicaciones():
     profesores= []
     yaguardados=[]
@@ -8,20 +6,15 @@ def publicaciones():
     datos = json.load(publicaciones)
 
     for i in datos:
-        nombre= i['apellidos']
-        cedula= i['cedula']
-        if not(yaguardados.__contains__(cedula)):
-            yaguardados.append(cedula)
-            profesores.append({'nombre':nombre, 'cedula':cedula, 'publicaciones':0})
+        if not(yaguardados.__contains__(i['cedula'])):
+            yaguardados.append(i['cedula'])
+            profesores.append({'nombre':i['apellidos'], 'cedula':i['cedula'], 'publicaciones':0})
     for i in profesores:
-        cedula=i['cedula']
         for x in datos:
-            if cedula == x['cedula']:
+            if i['cedula'] == x['cedula']:
                 i['publicaciones']+=1
     for i in profesores:
         print(f"el docente {i['nombre']} tiene {i['publicaciones']}")
-
-
 
 if __name__ == "__main__":
     publicaciones()
