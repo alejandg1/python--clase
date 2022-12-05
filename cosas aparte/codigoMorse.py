@@ -8,19 +8,27 @@
 #   https://es.wikipedia.org/wiki/Código_morse.
 
 
-MORSE = {' ': ' ', 'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
-         'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 'Z': '--..', }
-
 def morse():
+    MORSE = {' ': ' ', 'A': '.-', 'B': '-...', 'C': '-.-.', 'D': '-..', 'E': '.', 'F': '..-.', 'G': '--.', 'H': '....', 'I': '..', 'J': '.---', 'K': '-.-', 'L': '.-..',
+             'M': '--', 'N': '-.', 'O': '---', 'P': '.--.', 'Q': '--.-', 'R': '.-.', 'S': '...', 'T': '-', 'U': '..-', 'V': '...-', 'W': '.--', 'X': '-..-', 'Y': '-.--', 'Z': '--..', }
+    NATURAL = {' ': ' ', '.-': 'A', '-...': 'B', '-.-': 'C', '-..': 'D', '.': 'E', '..-.': 'F', '--': 'G', '....': 'H', '..': 'I', '.---': 'J', '-.-': 'K', '.-..': 'L',
+               '--': 'M', '-.': 'N', '---': 'O', '.--': 'P', '--.-': 'Q', '.-.': 'R', '...': 'S', '-': 'T', '..-': 'U', '...-': 'V', '.--': 'W', '-..-': 'X', '-.--': 'Y', '--..': 'Z'}
+
+    final = ""
+
     mensaje = input("escriba un mensaje en morse o lenguaje natural..  ")
     mensaje = mensaje.upper()
     print(f"{mensaje}")
     if mensaje.__contains__(".") or mensaje.__contains__("-"):
         for i in mensaje:
             pass
-    elif mensaje.__contains__("[a-zA-Z0-9]"):
-        pass
+        #!separa el morse por espacios
+
+    elif mensaje.isalpha():
+        for i in mensaje:
+            final = final + MORSE[i] + " "
+    print(f"traducciòn:{final}")
 
 
-if __name__== "__main__":
+if __name__ == "__main__":
     morse()
